@@ -13,10 +13,18 @@ const doMathTests = [
   { name: 'mul - 1', args: ['mul', 3, 2], expected: 6 },
   { name: 'mul - 2', args: ['mul', 8, 0], expected: 0 },
   { name: 'mul - 3', args: ['mul', -1, -1], expected: 1 },
+  
+  // write 7 more test cases for doMath
+  { name: 'add - 4', args: ['add', 7, 5], expected: 12 },
+  { name: 'add - 5', args: ['add', -4, -4], expected: -8 },
+  { name: 'add - 6', args: ['add', -5, 1], expected: -4 },
+  { name: 'min - 4', args: ['min', 5, 0], expected: 5 },
+  { name: 'min - 5', args: ['min', 5, 1], expected: 4 },
+  { name: 'min - 6', args: ['min', 8, 5], expected: 3 },
+  { name: 'div - 4', args: ['div', 10, 2], expected: 5 },
   { name: 'invalid - 1', args: ['tree', 0, 0], expected: 'invalid operation' },
   { name: 'invalid - 2', args: ['book', 0, 0], expected: 'invalid operation' },
   { name: 'invalid - 3', args: ['minus', 0, 0], expected: 'invalid operation' },
-  // write 7 more test cases for doMath
 
 ];
 
@@ -33,11 +41,26 @@ function doMath(operation, a, b) {
   if (typeof b !== 'number') {
     throw new Error('b should be a number');
   }
+  
   // write your code below this comment:
 
+  var a = parseInt(a);
+  var b = parseInt(b);
+  var calculate;
+  
+  if (operation === "add"){
+    calculate = a + b;
+  }
+  else if (operation === "min"){
+    calculate = a - b;
+  }
+  else if (operation === "div"){
+    calculate = a / b;
+  }
+  else if (operation === "mul"){
+    calculate = a * b;
+  }
 
-
+  return calculate;
 }
-
-
 testing(doMath, doMathTests);
