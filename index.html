@@ -2,6 +2,7 @@
 
 <head>
   <link rel="stylesheet" href="flexboxgrid.css">
+  <link rel="stylesheet" href="style.css">
   <!-- this script is to help evaluate your deployed project -->
   <script src='./dependencies/evaluation.js'></script>
   <!-- this is the testing function for your logic -->
@@ -11,14 +12,15 @@
 
 <body>
   <main>
-    <section>
+    <section id="cal">
       <div class="container">
         <div class="row center-xs">
           <div class="col-xs-12">
+            <h1> Basic Calculator</h1>
             <form>
-              Value 1: <input type="text" id="value1"><br>
-              Value 2: <input type="text" id="value2"><br>
-              Operator
+              Number 1: <input type="text" id="value1"><br>
+              Number 2: <input type="text" id="value2"><br>
+              Operator: 
               <select id="operator">
                 <option value="add">Add</option>
                 <option value="min">Minus</option>
@@ -27,19 +29,12 @@
               </select>
               <button type="button" id="calculate">Calculate</button>
             </form>
+            <h2 id="result"></h2>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="container">
-        <div class="row center-xs">
-          <div class="col-xs-12">
-            <h1 id="result"></h1>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <script src="scripts/handler.js"></script>
     <script src="scripts/listener.js"></script>
     
