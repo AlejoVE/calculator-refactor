@@ -49,18 +49,21 @@ function doMath(operation, a, b) {
   var calculate;
   
   if (operation === "add"){
-    calculate = a + b;
+     return calculate = a + b;
   }
   else if (operation === "min"){
-    calculate = a - b;
+    return calculate = a - b;
   }
   else if (operation === "div"){
-    calculate = a / b;
+    return calculate = a / b;
   }
   else if (operation === "mul"){
-    calculate = a * b;
+    return calculate = a * b;
+  }
+  else {
+    return calculate = "invalid operation"; 
   }
 
-  return calculate;
+  
 }
 testing(doMath, doMathTests);
