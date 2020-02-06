@@ -1,8 +1,6 @@
 # Name of Project
 
-user story
-
-wireframe
+[wireframe](https://wireframe.cc/e9wTvJ)
 
 ## DOM
 
@@ -38,6 +36,5 @@ wireframe
 
 | syntax | parameters | return value | behavior |
 | --- | --- | --- | --- |
-|const doMathTests |  a, b, operation| A number if the operation is valid, a string if the operation is invalid| 
-Makes mathematical operations and controls|
+|const doMathTests |  a, b, operation| A number if the operation is valid, a string if the operation is invalid| Makes mathematical operations and controls|
 
